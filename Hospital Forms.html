@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div style="display:flex; justify-content:space-between; align-items:center">
+    <div style="width:40%;height:90vh; ">
+        <img src="https://thumbs.dreamstime.com/b/beautiful-smiling-female-doctor-stand-office-portrait-physical-patient-disease-prevention-ward-round-exam-er-prescribe-113497480.jpg" />
+    </div>
+    <div style="width:58%;margin-top:0px">
+        <h1 style="text-align:center">Doctor Appointment Form</h1>
+        <hr style="border:1px solid red">
+        <form style="display:flex; flex-direction:column; gap:15px;">
+
+            <div style="display:flex; justify-content:space-between; ">
+        <label for="Appointment" style="width:40%;">Appointment Date</label>
+        <input type="date" id="Appointment" name="Appointment Date" required style="width:55%;">
+      </div>
+
+      <div style="display:flex; justify-content:space-between; ">
+        <label for="AppointmentTime" style="width:40%;">Appointment Time</label>
+        <input type="time" id="AppointmentTime" name="Appointment Time" required style="width:55%;">
+      </div>
+
+      <div style="display:flex; justify-content:space-between; ">
+        <label for="first" style="width:40%;">First Name</label>
+        <input type="text" id="first" name="first_name" required style="width:55%;">
+      </div>
+
+      <div style="display:flex; justify-content:space-between;">
+        <label for="last" style="width:40%;">Last Name</label>
+        <input type="text" id="last" name="last_name" required style="width:55%;">
+      </div>
+
+      <div style="display:flex; justify-content:space-between;">
+        <label style="width:40%;">Gender</label>
+        <div style="width:55%; text-align:left;">
+          <input type="radio" name="gender" value="Male" required> Male
+          <input type="radio" name="gender" value="Female" required style="margin-left:20px;"> Female
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between;">
+        <label for="number" style="width:40%;">Phone</label>
+        <input type="tel" id="number" name="Number" pattern="[0-9]{10}" required placeholder="10-digit phone number" style="width:55%;">
+      </div>
+
+      <div style="display:flex; justify-content:space-between; ">
+        <label for="address" style="width:40%;">City</label>
+        <input type="text" id="address" name="City" required placeholder="City" style="width:55%;">
+      </div>
+
+      <div style="display:flex; justify-content:space-between; ">
+        <label for="state" style="width:40%;">State</label>
+        <input type="text" id="state" name="State" required placeholder="State" style="width:55%;">
+      </div>
+
+      <div style="display:flex; justify-content:space-between;">
+        <label for="query" style="width:40%;">Your Query</label>
+        <textarea id="query" name="Your Query" rows="5" cols="50" placeholder="Enter your query here..." required style="width:55%;"></textarea>
+      </div>
+
+    
+      <fieldset style="border:1px solid black; padding:10px;">
+        <legend>Appointment Type – Select the appointment type(s) you require:</legend>
+        <div style="display:flex; flex-direction:column; gap:5px; padding-left:10px;">
+          <label><input type="checkbox" name="appointmentType" value="Cervix checkup"> Cervix Checkup</label>
+          <label><input type="checkbox" name="appointmentType" value="Heart checkup"> Heart Checkup</label>
+          <label><input type="checkbox" name="appointmentType" value="Eye check-up"> Eye Check-up</label>
+          <label><input type="checkbox" name="appointmentType" value="Hearing test"> Hearing Test</label>
+        </div>
+      </fieldset>
+
+     
+      <div style="text-align:center;">
+        <button type="submit" style="padding:10px; font-size:16px;">Submit</button>
+      </div>
+
+        </form>
+    </div>
+
+    </div>
+
+
+
+    </body>
+    </html>
